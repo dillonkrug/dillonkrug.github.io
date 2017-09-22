@@ -1954,20 +1954,21 @@ module.exports = Promise;
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-
-
 /* global window */
-
-function hasScrollLeft(el) {
+/*
+function hasScrollLeft (el) {
 	do {
 		if (el.scrollLeft > 0) {
 			return true;
 		}
-	} while (el = el.parentElement);
+	} while ((el = el.parentElement));
 	return false;
 }
 
-window.addEventListener('mousewheel', function (e) {
+window.addEventListener('mousewheel', e => {
+	if (true) {
+		return;
+	}
 	e.preventDefault();
 	e.stopPropagation();
 	if (e.deltaX >= 0) {
@@ -1978,6 +1979,9 @@ window.addEventListener('mousewheel', function (e) {
 		console.log('scrollLeft was', false);
 	}
 });
+
+*/
+
 
 /***/ }),
 /* 93 */

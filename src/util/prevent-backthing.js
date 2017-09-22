@@ -1,5 +1,5 @@
 /* global window */
-
+/*
 function hasScrollLeft (el) {
 	do {
 		if (el.scrollLeft > 0) {
@@ -10,6 +10,9 @@ function hasScrollLeft (el) {
 }
 
 window.addEventListener('mousewheel', e => {
+	if (true) {
+		return;
+	}
 	e.preventDefault();
 	e.stopPropagation();
 	if (e.deltaX >= 0) {
@@ -21,3 +24,4 @@ window.addEventListener('mousewheel', e => {
 	}
 });
 
+*/
