@@ -1,0 +1,34 @@
+{
+  "name": "dillonkrug.github.io",
+  "version": "1.0.0",
+  "description": "",
+  "main": "webpack.config.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dillonkrug/dillonkrug.github.io.git"
+  },
+  "keywords": [],
+  "dependencies": {
+    "babel-runtime": "6.23.0"
+  },
+ "devDependencies": {
+   "babel-cli": "6.24.1",
+   "babel-loader": "7.1.1",
+   "babel-plugin-syntax-decorators": "6.13.0",
+   "babel-plugin-transform-decorators-legacy": "1.3.4",
+   "babel-plugin-transform-runtime": "6.23.0",
+   "babel-preset-es2015": "6.24.1",
+   "babel-preset-stage-2": "6.24.1",
+   "eslint-plugin-promise": "3.5.0",
+   "webpack": "3.1.0"
+ },
+ "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dillonkrug/dillonkrug.github.io/issues"
+  },
+  "homepage": "https://github.com/dillonkrug/dillonkrug.github.io#readme"
+}
