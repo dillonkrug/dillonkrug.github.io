@@ -81,6 +81,7 @@ img {
 }
 #nav-logo {
 	width: 4em;
+	transform: rotate(-90deg);
 }
 
 .test-logo-path {
