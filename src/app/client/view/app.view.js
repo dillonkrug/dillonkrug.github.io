@@ -47,7 +47,7 @@ const LogoSvg = h('svg', {
 export class AppView extends Component {
 	constructor (props) {
 		super(props);
-		var date = new Date();
+		var date = new Date(Date.UTC(2017, 8, 21));
 		this.state = this.getProps(window.location.hash || getDateUrl(date));
 	}
 	getProps (path) {
