@@ -43,6 +43,23 @@ const LogoSvg = h('svg', {
 ]);
 
 
+function getNavLinks (params) {
+	var dates = [-2, -1, 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10].map(o => getDate(params, o));
+	var out = [];
+	dates
+		.forEach(d => {
+			out.push(h('li', [
+				h('a.date-link', {
+					href: getDateUrl(d)
+				}, [
+					d.getUTCDate()
+				])
+			]));
+		});
+	return out;
+}
+
+
 
 export class AppView extends Component {
 	constructor (props) {
@@ -67,7 +84,6 @@ export class AppView extends Component {
 		console.log('AppView', path, params);
 		// var prev = getDate(params, -1),
 		// 	next = getDate(params, 1);
-		var dates = [-2, -1, 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10].map(o => getDate(params, o));
 		return h('div.app-container', [
 			h('div.nav-container', [
 				h('ul.date-nav.list-unstyled', [
@@ -78,15 +94,7 @@ export class AppView extends Component {
 							LogoSvg
 						])
 					])
-				].concat(dates.map(d => {
-					return h('li', [
-						h('a.date-link', {
-							href: getDateUrl(d)
-						}, [
-							d.getUTCDate()
-						])
-					]);
-				})))
+				].concat(getNavLinks(params)))
 			]),
 			h('div.main-content', [
 				h(getRoute(path).component, params)

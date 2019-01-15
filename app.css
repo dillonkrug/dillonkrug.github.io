@@ -22,13 +22,17 @@ body {
 	bottom: 10px;
 }
 
-.img-caption {
-	position: absolute; 
+.img-footer {
+	position: absolute;
 	bottom: 2em;
-	width: 80%;
+	width: 100%;
+}
+.img-caption {
+	display: inline-block;
+	max-width: 80%;
 	background: rgba(0, 0, 0, 0.3);
 	color: #fff;
-	margin-left: 10%;
+	padding: 0 0.5em;
 }
 .img-slider {
 	overflow-x: scroll;
@@ -40,6 +44,7 @@ body {
 .img-content {
 	display:inline-block;
 	position: relative;
+	margin-right: 1em;
 }
 
 .img-content:before {

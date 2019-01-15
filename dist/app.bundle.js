@@ -1191,23 +1191,8 @@ var DayView = exports.DayView = function (_Component) {
 			return (0, _inferno.h)('div', [(0, _inferno.h)('h4.img-title', [data.title]), (0, _inferno.h)('div.img-slider', [data.img.map(function (img) {
 				return (0, _inferno.h)('div.img-content', [(0, _inferno.h)('img', {
 					class: 'test-img',
-					src: _this3.dataPath + '/img/' + img.file
-				}), (0, _inferno.h)('div.img-caption', [img.caption])]);
-			}), data.img.map(function (img) {
-				return (0, _inferno.h)('div.img-content', [(0, _inferno.h)('img', {
-					class: 'test-img',
-					src: _this3.dataPath + '/img/' + img.file
-				}), (0, _inferno.h)('div.img-caption', [img.caption])]);
-			}), data.img.map(function (img) {
-				return (0, _inferno.h)('div.img-content', [(0, _inferno.h)('img', {
-					class: 'test-img',
-					src: _this3.dataPath + '/img/' + img.file
-				}), (0, _inferno.h)('div.img-caption', [img.caption])]);
-			}), data.img.map(function (img) {
-				return (0, _inferno.h)('div.img-content', [(0, _inferno.h)('img', {
-					class: 'test-img',
-					src: _this3.dataPath + '/img/' + img.file
-				}), (0, _inferno.h)('div.img-caption', [img.caption])]);
+					src: img.link || _this3.dataPath + '/img/' + img.file
+				}), (0, _inferno.h)('div.img-footer', [(0, _inferno.h)('div.img-caption', [img.caption])])]);
 			})].reduce(function (o, a) {
 				return o.concat(a);
 			}))]);
@@ -1954,34 +1939,30 @@ module.exports = Promise;
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
+
+
 /* global window */
-/*
-function hasScrollLeft (el) {
+
+function hasScrollLeft(el) {
 	do {
 		if (el.scrollLeft > 0) {
 			return true;
 		}
-	} while ((el = el.parentElement));
+	} while (el = el.parentElement);
 	return false;
 }
 
-window.addEventListener('mousewheel', e => {
-	if (true) {
-		return;
-	}
-	e.preventDefault();
-	e.stopPropagation();
+window.addEventListener('wheel', function (e) {
 	if (e.deltaX >= 0) {
 		return;
 	}
-	console.log('wheel', e);
+	// console.log('wheel', e);
 	if (!hasScrollLeft(e.target)) {
-		console.log('scrollLeft was', false);
+		e.preventDefault();
+		e.stopPropagation();
+		// console.log('scrollLeft was', false);
 	}
 });
-
-*/
-
 
 /***/ }),
 /* 93 */
@@ -2055,6 +2036,19 @@ var LogoSvg = (0, _inferno.h)('svg', {
 	d: 'M 945 410 H 586.069 L 857.75 681.681 L 801.181 738.25 L 513 450.069 V 288.931 L 721.931 80 H 223.069 L 433 289.931 V 449.069 L 143.819 738.25 L 87.25 681.681 L 358.931 410 H 0 V 330 H 359.931 L 30.108 0 H 914.892 L 585.069 330 H 945 V 410 z'
 })]);
 
+function getNavLinks(params) {
+	var dates = [-2, -1, 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10].map(function (o) {
+		return getDate(params, o);
+	});
+	var out = [];
+	dates.forEach(function (d) {
+		out.push((0, _inferno.h)('li', [(0, _inferno.h)('a.date-link', {
+			href: getDateUrl(d)
+		}, [d.getUTCDate()])]));
+	});
+	return out;
+}
+
 var AppView = exports.AppView = function (_Component) {
 	(0, _inherits3.default)(AppView, _Component);
 
@@ -2096,16 +2090,9 @@ var AppView = exports.AppView = function (_Component) {
 			console.log('AppView', path, params);
 			// var prev = getDate(params, -1),
 			// 	next = getDate(params, 1);
-			var dates = [-2, -1, 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10].map(function (o) {
-				return getDate(params, o);
-			});
 			return (0, _inferno.h)('div.app-container', [(0, _inferno.h)('div.nav-container', [(0, _inferno.h)('ul.date-nav.list-unstyled', [(0, _inferno.h)('li', [(0, _inferno.h)('a', {
 				href: '#'
-			}, [LogoSvg])])].concat(dates.map(function (d) {
-				return (0, _inferno.h)('li', [(0, _inferno.h)('a.date-link', {
-					href: getDateUrl(d)
-				}, [d.getUTCDate()])]);
-			})))]), (0, _inferno.h)('div.main-content', [(0, _inferno.h)((0, _route.getRoute)(path).component, params)])]);
+			}, [LogoSvg])])].concat(getNavLinks(params)))]), (0, _inferno.h)('div.main-content', [(0, _inferno.h)((0, _route.getRoute)(path).component, params)])]);
 		}
 	}]);
 	return AppView;

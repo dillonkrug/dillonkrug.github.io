@@ -32,30 +32,11 @@ export class DayView extends Component {
 				data.img.map(img => h('div.img-content', [
 					h('img', {
 						class: 'test-img',
-						src: `${ this.dataPath}/img/${ img.file }`
+						src: img.link || `${ this.dataPath}/img/${ img.file }`
 					}),
-					h('div.img-caption', [img.caption])
-				])),
-				data.img.map(img => h('div.img-content', [
-					h('img', {
-						class: 'test-img',
-						src: `${ this.dataPath}/img/${ img.file }`
-					}),
-					h('div.img-caption', [img.caption])
-				])),
-				data.img.map(img => h('div.img-content', [
-					h('img', {
-						class: 'test-img',
-						src: `${ this.dataPath}/img/${ img.file }`
-					}),
-					h('div.img-caption', [img.caption])
-				])),
-				data.img.map(img => h('div.img-content', [
-					h('img', {
-						class: 'test-img',
-						src: `${ this.dataPath}/img/${ img.file }`
-					}),
-					h('div.img-caption', [img.caption])
+					h('div.img-footer', [
+						h('div.img-caption', [img.caption])
+					])
 				]))
 			].reduce((o, a) => o.concat(a)))
 		]);

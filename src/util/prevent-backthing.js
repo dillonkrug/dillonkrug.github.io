@@ -1,5 +1,5 @@
 /* global window */
-/*
+
 function hasScrollLeft (el) {
 	do {
 		if (el.scrollLeft > 0) {
@@ -9,19 +9,16 @@ function hasScrollLeft (el) {
 	return false;
 }
 
-window.addEventListener('mousewheel', e => {
-	if (true) {
-		return;
-	}
-	e.preventDefault();
-	e.stopPropagation();
+window.addEventListener('wheel', e => {
 	if (e.deltaX >= 0) {
 		return;
 	}
-	console.log('wheel', e);
+	// console.log('wheel', e);
 	if (!hasScrollLeft(e.target)) {
-		console.log('scrollLeft was', false);
+		e.preventDefault();
+		e.stopPropagation();
+		// console.log('scrollLeft was', false);
 	}
 });
 
-*/
+
