@@ -1,0 +1,13 @@
+{
+  "main.css": "/wotd/static/css/main.9d08ac69.chunk.css",
+  "main.js": "/wotd/static/js/main.7a56833d.chunk.js",
+  "main.js.map": "/wotd/static/js/main.7a56833d.chunk.js.map",
+  "static/js/1.813f17f2.chunk.js": "/wotd/static/js/1.813f17f2.chunk.js",
+  "static/js/1.813f17f2.chunk.js.map": "/wotd/static/js/1.813f17f2.chunk.js.map",
+  "runtime~main.js": "/wotd/static/js/runtime~main.2a1cb66c.js",
+  "runtime~main.js.map": "/wotd/static/js/runtime~main.2a1cb66c.js.map",
+  "static/css/main.9d08ac69.chunk.css.map": "/wotd/static/css/main.9d08ac69.chunk.css.map",
+  "index.html": "/wotd/index.html",
+  "precache-manifest.d37b4a1c6f7ab8bb1037b1c6a26558ba.js": "/wotd/precache-manifest.d37b4a1c6f7ab8bb1037b1c6a26558ba.js",
+  "service-worker.js": "/wotd/service-worker.js"
+}
