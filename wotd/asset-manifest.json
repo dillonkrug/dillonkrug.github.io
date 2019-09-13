@@ -1,13 +1,13 @@
 {
   "main.css": "/wotd/static/css/main.9d08ac69.chunk.css",
-  "main.js": "/wotd/static/js/main.37e87b4f.chunk.js",
-  "main.js.map": "/wotd/static/js/main.37e87b4f.chunk.js.map",
+  "main.js": "/wotd/static/js/main.b4e0b36d.chunk.js",
+  "main.js.map": "/wotd/static/js/main.b4e0b36d.chunk.js.map",
   "static/js/1.813f17f2.chunk.js": "/wotd/static/js/1.813f17f2.chunk.js",
   "static/js/1.813f17f2.chunk.js.map": "/wotd/static/js/1.813f17f2.chunk.js.map",
   "runtime~main.js": "/wotd/static/js/runtime~main.2a1cb66c.js",
   "runtime~main.js.map": "/wotd/static/js/runtime~main.2a1cb66c.js.map",
   "static/css/main.9d08ac69.chunk.css.map": "/wotd/static/css/main.9d08ac69.chunk.css.map",
   "index.html": "/wotd/index.html",
-  "precache-manifest.1fafcdf543a76c17d115d6f6bc885a02.js": "/wotd/precache-manifest.1fafcdf543a76c17d115d6f6bc885a02.js",
+  "precache-manifest.57da93aee623bde1376b28bac438f942.js": "/wotd/precache-manifest.57da93aee623bde1376b28bac438f942.js",
   "service-worker.js": "/wotd/service-worker.js"
 }
