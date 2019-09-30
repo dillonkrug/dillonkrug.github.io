@@ -1,13 +1,13 @@
 {
-  "main.css": "/wotd/static/css/main.9d08ac69.chunk.css",
-  "main.js": "/wotd/static/js/main.e301f06e.chunk.js",
-  "main.js.map": "/wotd/static/js/main.e301f06e.chunk.js.map",
-  "static/js/1.813f17f2.chunk.js": "/wotd/static/js/1.813f17f2.chunk.js",
-  "static/js/1.813f17f2.chunk.js.map": "/wotd/static/js/1.813f17f2.chunk.js.map",
+  "main.css": "/wotd/static/css/main.4a150b77.chunk.css",
+  "main.js": "/wotd/static/js/main.cb871923.chunk.js",
+  "main.js.map": "/wotd/static/js/main.cb871923.chunk.js.map",
+  "static/js/1.06bb2e2a.chunk.js": "/wotd/static/js/1.06bb2e2a.chunk.js",
+  "static/js/1.06bb2e2a.chunk.js.map": "/wotd/static/js/1.06bb2e2a.chunk.js.map",
   "runtime~main.js": "/wotd/static/js/runtime~main.2a1cb66c.js",
   "runtime~main.js.map": "/wotd/static/js/runtime~main.2a1cb66c.js.map",
-  "static/css/main.9d08ac69.chunk.css.map": "/wotd/static/css/main.9d08ac69.chunk.css.map",
+  "static/css/main.4a150b77.chunk.css.map": "/wotd/static/css/main.4a150b77.chunk.css.map",
   "index.html": "/wotd/index.html",
-  "precache-manifest.6a94439846867bf593ac7f01db13dcc3.js": "/wotd/precache-manifest.6a94439846867bf593ac7f01db13dcc3.js",
+  "precache-manifest.6c739bccd2c83496e676ac824abce0e8.js": "/wotd/precache-manifest.6c739bccd2c83496e676ac824abce0e8.js",
   "service-worker.js": "/wotd/service-worker.js"
 }
