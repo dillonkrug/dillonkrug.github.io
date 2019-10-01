@@ -16,7 +16,7 @@ self.__precacheManifest = [
     "url": "/wotd/static/js/runtime~main.2a1cb66c.js"
   },
   {
-    "revision": "e9aaf68f79e8057033fcb2dcf4e03bc3",
+    "revision": "b1db9b538b9ce591aa99595ad0a19b59",
     "url": "/wotd/index.html"
   }
 ];
