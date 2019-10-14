@@ -1,11 +1,11 @@
 self.__precacheManifest = [
   {
-    "revision": "c043347458bc8f5af6bd",
+    "revision": "f0110a5ce0157919f8af",
     "url": "/wotd/static/css/main.4a150b77.chunk.css"
   },
   {
-    "revision": "c043347458bc8f5af6bd",
-    "url": "/wotd/static/js/main.c0433474.chunk.js"
+    "revision": "f0110a5ce0157919f8af",
+    "url": "/wotd/static/js/main.f0110a5c.chunk.js"
   },
   {
     "revision": "06bb2e2a2f690e059a92",
@@ -16,7 +16,7 @@ self.__precacheManifest = [
     "url": "/wotd/static/js/runtime~main.2a1cb66c.js"
   },
   {
-    "revision": "30c70c293fc5db001049b9ab97be61bc",
+    "revision": "7fe7f332d9b1507b62e5e870e6b0c5f5",
     "url": "/wotd/index.html"
   }
 ];
